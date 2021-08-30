@@ -1,0 +1,207 @@
+* {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-size: 16px;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  line-height: 1;
+  background-color: #aaa;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 120px 0;
+}
+
+.main, .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main > .avator {
+  width: 280px;
+  height: 280px;
+  border-radius: 140px;
+  background-color: #aaa;
+  margin-bottom: 60px;
+}
+
+.main > h1 {
+  background-color: #aaa;
+}
+
+.profile > h1 {
+  margin-bottom: 60px;
+}
+
+.profile > p {
+  display: inline-block;
+  vertical-align: top;
+  width: 80%;
+}
+
+.experiences_skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.experiences_skills > .experiences, .experiences_skills > .skills {
+  width: 40%;
+  border: 1px solid #000;
+}
+
+.experiences_skills > .experiences > h2, .experiences_skills > .skills > h2 {
+  margin-bottom: 20px;
+}
+
+.experiences_skills > .experiences > ul > li, .experiences_skills > .skills > ul > li {
+  font-size: 40px;
+  line-height: 1.2;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  .experiences_skills > .experiences,
+  .experiences_skills > .skills {
+    width: 60%;
+  }
+  .experiences_skills > .experiences {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experiences_skills > .experiences,
+  .experiences_skills > .skills {
+    width: 80%;
+  }
+}
+
+.works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #efefef;
+}
+
+.works > h1 {
+  margin-bottom: 60px;
+}
+
+.works-container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -16px 0;
+}
+
+.works-container > .work {
+  width: 320px;
+  margin: 16px;
+  background: #aaa;
+}
+
+.works-container > .work:after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #efefef;
+}
+
+.contact > h1 {
+  margin-bottom: 60px;
+}
+
+.contact > .content > div {
+  font-size: 32px;
+  margin-bottom: 28px;
+  background-color: #aaa;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: #ccc;
+}
+/*# sourceMappingURL=style.css.map */
