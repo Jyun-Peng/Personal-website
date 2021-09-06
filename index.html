@@ -6,68 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+    <link href="./vendor/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="./vendor/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="./vendor/fontawesome/css/solid.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">LOGO</div>
+        <div class="nav-list">
+            <a href="#main" class="nav nav--main" >top</a>
+            <a href="#aboutMe" class="nav nav--about-me">關於我</a>
+            <a href="#works" class="nav nav--works">作品</a>
+            <a href="#contact" class="nav nav--contact">聯絡</a>
+        </div>
+    </header>
     <div class="wrapper">
-        <section class="main">
+        <section class="main" id="main">
             <div class="avator"></div>
-            <h1>Hi, I'm ......</h1>
+            <h1>黃駿朋</h1>
         </section>
-        <section class="profile">
-            <h1>PROFILE</h1>
-            <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+
+        <section class="about-me" id="aboutMe">
+            <h1>About</h1>
+            <div class="profile">
+                <p>我是國立台北大學資工系的應屆畢業生，對網頁開發有相當大的興趣與熱忱。平時開發side project時，
+                    秉持著不用插件的原則。我認為太過方便的工具用起來不太安心，所以喜歡自己實作，也藉此拓展我的能力範圍。
                 </p>
-        </section>
-        <section class="experiences_skills">
-            <div class="experiences">
-                <h2>EXPERIENCES</h2>
-                <ul>
-                    <li>content</li>
-                    <li>content</li>
-                    <li>content</li>
-                    <li>content</li>
-                    <li>content</li>
-                    <li>content</li>
-                </ul>
             </div>
-            <div class="skills">
-                <h2>SKILLS</h2>
-                <ul>
-                    <li>content</li>
-                    <li>content</li>
-                    <li>content</li>
-                    <li>content</li>
-                    <li>content</li>
-                    <li>content</li>
-                    <li>content</li>
-                    <li>content</li>
-                </ul>
+            <div class="experiences-skills">
+                <div class="selector">
+                    <div class="selector__item selected" data-target="experiences">Experiences</div>
+                    <div class="selector__item" data-target="skills">Skills</div>
+                </div>
+                <div class="content">
+                    <div class="experiences-skills__item experiences selected">
+                        <h2>EXPERIENCES</h2>
+                        <ul>
+                            <li>
+                                <span class="time">xxxx-xxxx</span>
+                                <span class="title">經歷</span>
+                            </li>
+                            <li>
+                                <span class="time">XXXX-XXXX</span>
+                                <span class="title">經歷</span>
+                            </li>
+                            <li>
+                                <span class="time">XXXX-XXXX</span>
+                                <span class="title">經歷</span>
+                            </li>
+                            <li>
+                                <span class="time">XXXX-XXXX</span>
+                                <span class="title">經歷</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="experiences-skills__item skills">
+                        <div class="content">
+                            <h3>前端</h3>
+                            <ul>
+                                <li><span class="dash">--</span>HTML/CSS</li>
+                                <li><span class="dash">--</span>Javascript</li>
+                                <li><span class="dash">--</span>Sass</li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h3>領域</h3>
+                            <ul>
+                                <li><span class="dash">--</span>技能</li>
+                                <li><span class="dash">--</span>技能</li>
+                                <li><span class="dash">--</span>技能</li>
+                                <li><span class="dash">--</span>技能</li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h3>領域</h3>
+                            <ul>
+                                <li><span class="dash">--</span>技能</li>
+                                <li><span class="dash">--</span>技能</li>
+                                <li><span class="dash">--</span>技能</li>
+                                <li><span class="dash">--</span>技能</li>
+                                <li><span class="dash">--</span>技能</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="works">
+
+        <section class="works" id="works">
             <h1>WORKS</h1>
             <div class="works-container">
-                <a class="work" href="#!"></a>
-                <a class="work" href="#!"></a>
-                <a class="work" href="#!"></a>
-                <a class="work" href="#!"></a>
-                <a class="work" href="#!"></a>
-            </div>
-        </section>
-        <section class="contact">
-            <h1>CONTACT</h1>
-            <div class="content">
-                <div class="location">工作地點</div>
-                <div class="phone">0123456789</div>
-                <div class="email">0123456@gmail.com</div>
-            </div>
-            <div class="icon-group">
+                <a href="https://jyun-peng.github.io/To-do-List/" class="work">
+                    <div class="bg" style="background-image: url('./image/work-thumbnails/todo-list.jpg');"></div>
+                    <h3>To Do List</h3>
+                </a>
+                <a href="#!" class="work">
+                    <div class="bg" style="background-image: url('./image/work-thumbnails/todo-list.jpg');"></div>
+                    <h3>作品</h3>
+                </a>
+                <a href="#!" class="work">
+                    <div class="bg" style="background-image: url('./image/work-thumbnails/todo-list.jpg');"></div>
+                    <h3>作品</h3>
+                </a>
+                <a href="#!" class="work">
+                    <div class="bg" style="background-image: url('./image/work-thumbnails/todo-list.jpg');"></div>
+                    <h3>作品</h3>
+                </a>
+                <a href="#!" class="work">
+                    <div class="bg" style="background-image: url('./image/work-thumbnails/todo-list.jpg');"></div>
+                    <h3>作品</h3>
+                </a>
 
             </div>
         </section>
+
+        <section class="contact" id="contact">
+            <div class="border--top"></div>
+            <h1>CONTACT</h1>
+            <div class="information">
+                <div class="phone"><i class="fas fa-mobile-alt"></i><span>0931-368-998</span></div>
+                <div class="email"><i class="fas fa-envelope"></i><span>kekvkikn@gmail.com</span></div>
+            </div>
+            <div class="icon-group">
+                <a href="#!" class="icon"><i class="fab fa-github"></i></a>
+                <a href="#!" class="icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </section>
+        <footer>Copyright © Jyun-Peng Huang</footer>
     </div>
-</body>
+
+    <script src="./js/custom.js"></script>
+</body> 
 </html>
