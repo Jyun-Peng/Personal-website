@@ -8,7 +8,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="preload" as="style">
+
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
 
     <link href="./vendor/fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="./vendor/fontawesome/css/brands.css" rel="stylesheet">
@@ -16,6 +20,7 @@
 
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/carousel.css">
 </head>
 <body>
     <header>
@@ -28,14 +33,17 @@
         </div>
     </header>
     <div class="wrapper">
-        <section class="main" id="main">
-            <div class="avator"></div>
-            <h1>黃駿朋</h1>
+        <section class="main js-top" id="main">
+            <div class="portrait js-portrait" style="background-image: url('./image/portrait.jpg');"></div>
+            <div class="intro js-portrait-fadeout-start js-intro">
+                <h1>Jyun Peng</h1>
+            </div>
         </section>
 
         <section class="about-me" id="aboutMe">
             <h1>About</h1>
             <div class="profile">
+                <div class="portrait__sm" style="background-image: url('./image/portrait__small.jpg');"></div>
                 <p>我是國立台北大學資工系的應屆畢業生，對網頁開發有相當大的興趣與熱忱。平時開發side project時，
                     秉持著不用插件的原則。我認為太過方便的工具用起來不太安心，所以喜歡自己實作，也藉此拓展我的能力範圍。
                 </p>
@@ -46,8 +54,7 @@
                     <div class="selector__item" data-target="skills">Skills</div>
                 </div>
                 <div class="content">
-                    <div class="experiences-skills__item experiences selected">
-                        <h2>EXPERIENCES</h2>
+                    <div class="content__item content__experiences selected">
                         <ul>
                             <li>
                                 <span class="time">xxxx-xxxx</span>
@@ -67,8 +74,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="experiences-skills__item skills">
-                        <div class="content">
+                    <div class="content__item content__skills">
+                        <div class="categary">
                             <h3>前端</h3>
                             <ul>
                                 <li><span class="dash">--</span>HTML/CSS</li>
@@ -76,7 +83,7 @@
                                 <li><span class="dash">--</span>Sass</li>
                             </ul>
                         </div>
-                        <div class="content">
+                        <div class="categary">
                             <h3>領域</h3>
                             <ul>
                                 <li><span class="dash">--</span>技能</li>
@@ -85,9 +92,11 @@
                                 <li><span class="dash">--</span>技能</li>
                             </ul>
                         </div>
-                        <div class="content">
+                        <div class="categary">
                             <h3>領域</h3>
                             <ul>
+                                <li><span class="dash">--</span>技能</li>
+                                <li><span class="dash">--</span>技能</li>
                                 <li><span class="dash">--</span>技能</li>
                                 <li><span class="dash">--</span>技能</li>
                                 <li><span class="dash">--</span>技能</li>
@@ -102,29 +111,112 @@
 
         <section class="works" id="works">
             <h1>WORKS</h1>
-            <div class="works-container">
-                <a href="https://jyun-peng.github.io/To-do-List/" class="work">
-                    <div class="bg" style="background-image: url('./image/work-thumbnails/todo-list.jpg');"></div>
+            <div class="carousel carousel--works">
+                <div class="carousel__content">
+                    <div class="carousel__item">
+                        <a href="https://jyun-peng.github.io/To-do-List/" class="work" style="background-image: url('./image/work-thumbnails/todo-list.jpg');">
+                            <div class="mask"></div>
+                            <h3 class="title">To Do List</h3>
+                            <div class="tool-group">
+                                <div class="tool">HTML/CSS</div>
+                                <div class="tool">Sass</div>
+                                <div class="tool">JS</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel__item">
+                        <a href="https://jyun-peng.github.io/Datepicker/" class="work" style="background-image: url('./image/work-thumbnails/datepicker.jpg');">
+                            <div class="mask"></div>
+                            <h3 class="title">Datepicker</h3>
+                            <div class="tool-group">
+                                <div class="tool">HTML/CSS</div>
+                                <div class="tool">Sass</div>
+                                <div class="tool">JS</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel__item">
+                        <a href="https://jyun-peng.github.io/Datepicker/" class="work" style="background-image: url('./image/work-thumbnails/datepicker.jpg');">
+                            <div class="mask"></div>
+                            <h3 class="title">Datepicker</h3>
+                            <div class="tool-group">
+                                <div class="tool">HTML/CSS</div>
+                                <div class="tool">Sass</div>
+                                <div class="tool">JS</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel__item">
+                        <a href="https://jyun-peng.github.io/Datepicker/" class="work" style="background-image: url('./image/work-thumbnails/datepicker.jpg');">
+                            <div class="mask"></div>
+                            <h3 class="title">Datepicker</h3>
+                            <div class="tool-group">
+                                <div class="tool">HTML/CSS</div>
+                                <div class="tool">Sass</div>
+                                <div class="tool">JS</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel__item">
+                        <a href="https://jyun-peng.github.io/Datepicker/" class="work" style="background-image: url('./image/work-thumbnails/datepicker.jpg');">
+                            <div class="mask"></div>
+                            <h3 class="title">Datepicker</h3>
+                            <div class="tool-group">
+                                <div class="tool">HTML/CSS</div>
+                                <div class="tool">JS</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel__controls">
+                    <div class="carousel__btn prev" data-direction='prev'><i class="fas fa-chevron-left"></i></div>
+                    <div class="carousel__btn next" data-direction='next'><i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div class="carousel__dots"></div>
+            </div>
+            <!-- <div class="works-container">
+                <a href="https://jyun-peng.github.io/To-do-List/" class="work" style="background-image: url('./image/work-thumbnails/todo-list.jpg');">
+                    <div class="mask"></div>
                     <h3>To Do List</h3>
+                    <div class="tool-group">
+                        <div class="tool">HTML/CSS</div>
+                        <div class="tool">JS</div>
+                    </div>
                 </a>
-                <a href="#!" class="work">
-                    <div class="bg" style="background-image: url('./image/work-thumbnails/todo-list.jpg');"></div>
-                    <h3>作品</h3>
+                <a href="https://jyun-peng.github.io/To-do-List/" class="work" style="background-image: url('./image/work-thumbnails/todo-list.jpg');">
+                    <div class="mask"></div>
+                    <h3>To Do List</h3>
+                    <div class="tool-group">
+                        <div class="tool">HTML/CSS</div>
+                        <div class="tool">JS</div>
+                    </div>
                 </a>
-                <a href="#!" class="work">
-                    <div class="bg" style="background-image: url('./image/work-thumbnails/todo-list.jpg');"></div>
-                    <h3>作品</h3>
+                <a href="https://jyun-peng.github.io/To-do-List/" class="work" style="background-image: url('./image/work-thumbnails/todo-list.jpg');">
+                    <div class="mask"></div>
+                    <h3>To Do List</h3>
+                    <div class="tool-group">
+                        <div class="tool">HTML/CSS</div>
+                        <div class="tool">JS</div>
+                    </div>
                 </a>
-                <a href="#!" class="work">
-                    <div class="bg" style="background-image: url('./image/work-thumbnails/todo-list.jpg');"></div>
-                    <h3>作品</h3>
+                <a href="https://jyun-peng.github.io/To-do-List/" class="work" style="background-image: url('./image/work-thumbnails/todo-list.jpg');">
+                    <div class="mask"></div>
+                    <h3>To Do List</h3>
+                    <div class="tool-group">
+                        <div class="tool">HTML/CSS</div>
+                        <div class="tool">JS</div>
+                    </div>
                 </a>
-                <a href="#!" class="work">
-                    <div class="bg" style="background-image: url('./image/work-thumbnails/todo-list.jpg');"></div>
-                    <h3>作品</h3>
+                <a href="https://jyun-peng.github.io/To-do-List/" class="work" style="background-image: url('./image/work-thumbnails/todo-list.jpg');">
+                    <div class="mask"></div>
+                    <h3>To Do List</h3>
+                    <div class="tool-group">
+                        <div class="tool">HTML/CSS</div>
+                        <div class="tool">JS</div>
+                    </div>
                 </a>
 
-            </div>
+            </div> -->
         </section>
 
         <section class="contact" id="contact">
@@ -142,6 +234,8 @@
         <footer>Copyright © Jyun-Peng Huang</footer>
     </div>
 
+
     <script src="./js/custom.js"></script>
+    <script src="./js/carousel.js"></script>
 </body> 
 </html>
