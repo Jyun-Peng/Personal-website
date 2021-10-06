@@ -1,180 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="preload" as="style">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="preload" as="style" />
 
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
 
-    <link href="./vendor/fontawesome/css/fontawesome.css" rel="stylesheet">
-    <link href="./vendor/fontawesome/css/brands.css" rel="stylesheet">
-    <link href="./vendor/fontawesome/css/solid.css" rel="stylesheet">
+        <link href="./vendor/fontawesome/css/fontawesome.css" rel="stylesheet" />
+        <link href="./vendor/fontawesome/css/brands.css" rel="stylesheet" />
+        <link href="./vendor/fontawesome/css/solid.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/carousel.css">
-</head>
-<body>
-    <header>
-        <div class="logo">LOGO</div>
-        <div class="nav-list">
-            <a href="#main" class="nav nav--main" >top</a>
-            <a href="#aboutMe" class="nav nav--about-me">關於我</a>
-            <a href="#works" class="nav nav--works">作品</a>
-            <a href="#contact" class="nav nav--contact">聯絡</a>
-        </div>
-    </header>
-    <div class="wrapper">
-        <section class="main js-top" id="main">
-            <div class="portrait js-portrait" style="background-image: url('./image/portrait.jpg');"></div>
-            <div class="intro js-portrait-fadeout-start js-intro">
-                <h1>Jyun Peng</h1>
+        <link rel="stylesheet" href="./css/normalize.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/carousel.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">LOGO</div>
+            <div class="nav-list">
+                <a href="#main" class="nav nav--main">top</a>
+                <a href="#aboutMe" class="nav nav--about-me">關於我</a>
+                <a href="#works" class="nav nav--works">作品</a>
+                <a href="#contact" class="nav nav--contact">聯絡</a>
             </div>
-        </section>
-
-        <section class="about-me" id="aboutMe">
-            <h1>About</h1>
-            <div class="profile">
-                <div class="portrait__sm" style="background-image: url('./image/portrait__small.jpg');"></div>
-                <p>我是國立台北大學資工系的應屆畢業生，對網頁開發有相當大的興趣與熱忱。平時開發side project時，
-                    秉持著不用插件的原則。我認為太過方便的工具用起來不太安心，所以喜歡自己實作，也藉此拓展我的能力範圍。
-                </p>
-            </div>
-            <div class="experiences-skills">
-                <div class="selector">
-                    <div class="selector__item selected" data-target="experiences">Experiences</div>
-                    <div class="selector__item" data-target="skills">Skills</div>
+        </header>
+        <div class="wrapper">
+            <section class="main js-top" id="main">
+                <div class="portrait js-portrait" style="background-image: url('./image/portrait.jpg')"></div>
+                <div class="intro js-portrait-fadeout-start js-intro">
+                    <h1>Jyun Peng</h1>
                 </div>
-                <div class="content">
-                    <div class="content__item content__experiences selected">
-                        <ul>
-                            <li>
-                                <span class="time">xxxx-xxxx</span>
-                                <span class="title">經歷</span>
-                            </li>
-                            <li>
-                                <span class="time">XXXX-XXXX</span>
-                                <span class="title">經歷</span>
-                            </li>
-                            <li>
-                                <span class="time">XXXX-XXXX</span>
-                                <span class="title">經歷</span>
-                            </li>
-                            <li>
-                                <span class="time">XXXX-XXXX</span>
-                                <span class="title">經歷</span>
-                            </li>
-                        </ul>
+            </section>
+
+            <section class="about-me" id="aboutMe">
+                <h1>About</h1>
+                <div class="profile">
+                    <div class="portrait__sm" style="background-image: url('./image/portrait__small.jpg')"></div>
+                    <p>
+                        我是黃駿朋，畢業於國立台北大學資訊工程系。高中一年級時第一次接觸到C++，對程式設計抱有十分的興趣。
+                        大學主要學習的程式語言為C/C++，大學三年級因為學米學習平台接觸到前端領域，決定往前端工程師前進。我學程式的
+                        原則是，document絕對先翻過一遍，因為不了解的東西我用得不太安心。
+                    </p>
+                </div>
+                <div class="experiences-skills">
+                    <div class="selector">
+                        <div class="selector__item selected" data-target="experiences">Experiences</div>
+                        <div class="selector__item" data-target="skills">Skills</div>
                     </div>
-                    <div class="content__item content__skills">
-                        <div class="categary">
-                            <h3>前端</h3>
+                    <div class="content">
+                        <div class="content__item content__experiences selected">
                             <ul>
-                                <li><span class="dash">--</span>HTML/CSS</li>
-                                <li><span class="dash">--</span>Javascript</li>
-                                <li><span class="dash">--</span>Sass</li>
+                                <li>
+                                    <div class="list__square"><span></span></div>
+                                    <div class="list__text">就讀國立台北大學資工系</div>
+                                </li>
+                                <li>
+                                    <div class="list__square"><span></span></div>
+                                    <div class="list__text">使用 Android Studio 模擬點餐 APP</div>
+                                </li>
+                                <li>
+                                    <div class="list__square"><span></span></div>
+                                    <div class="list__text">使用 Android Studio Canvas 製作動畫</div>
+                                </li>
+                                <li>
+                                    <div class="list__square"><span></span></div>
+                                    <div class="list__text">使用 XAMPP Apache + MySQL 建社交關係資料庫</div>
+                                </li>
+                                <li>
+                                    <div class="list__square"><span></span></div>
+                                    <div class="list__text">使用C++ 模擬 C 編譯器</div>
+                                </li>
+                                <li>
+                                    <div class="list__square"><span></span></div>
+                                    <div class="list__text">大學參加熱舞社擔任教學，負責指導新成員，曾編排7支舞</div>
+                                </li>
+                                <li>
+                                    <div class="list__square"><span></span></div>
+                                    <div class="list__text">曾帶領社團成員參加大學街舞比賽 College High Vol.16</div>
+                                </li>
+                                <li>
+                                    <div class="list__square"><span></span></div>
+                                    <div class="list__text">曾負責製作社團活動海報與主視覺，使用photoshop</div>
+                                </li>
                             </ul>
                         </div>
-                        <div class="categary">
-                            <h3>領域</h3>
-                            <ul>
-                                <li><span class="dash">--</span>技能</li>
-                                <li><span class="dash">--</span>技能</li>
-                                <li><span class="dash">--</span>技能</li>
-                                <li><span class="dash">--</span>技能</li>
-                            </ul>
-                        </div>
-                        <div class="categary">
-                            <h3>領域</h3>
-                            <ul>
-                                <li><span class="dash">--</span>技能</li>
-                                <li><span class="dash">--</span>技能</li>
-                                <li><span class="dash">--</span>技能</li>
-                                <li><span class="dash">--</span>技能</li>
-                                <li><span class="dash">--</span>技能</li>
-                                <li><span class="dash">--</span>技能</li>
-                                <li><span class="dash">--</span>技能</li>
-                            </ul>
+                        <div class="content__item content__skills">
+                            <div class="categary">
+                                <h3>前端</h3>
+                                <ul>
+                                    <li>
+                                        <div class="list__square"><span></span></div>
+                                        <div class="list__text">熟悉 HTML/CSS</div>
+                                    </li>
+                                    <li>
+                                        <div class="list__square"><span></span></div>
+                                        <div class="list__text">熟悉 Javascript</div>
+                                    </li>
+                                    <li>
+                                        <div class="list__square"><span></span></div>
+                                        <div class="list__text">熟悉 Sass</div>
+                                    </li>
+                                    <li>
+                                        <div class="list__square"><span></span></div>
+                                        <div class="list__text">建立 RWD 響應式網頁</div>
+                                    </li>
+                                    <li>
+                                        <div class="list__square"><span></span></div>
+                                        <div class="list__text">了解 Figma 操作</div>
+                                    </li>
+                                    <li>
+                                        <div class="list__square"><span></span></div>
+                                        <div class="list__text">使用 React 實作 SPA</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="categary">
+                                <h3>領域</h3>
+                                <ul>
+                                    <li><span class="dash">--</span>技能</li>
+                                    <li><span class="dash">--</span>技能</li>
+                                    <li><span class="dash">--</span>技能</li>
+                                    <li><span class="dash">--</span>技能</li>
+                                </ul>
+                            </div>
+                            <div class="categary">
+                                <h3>領域</h3>
+                                <ul>
+                                    <li><span class="dash">--</span>技能</li>
+                                    <li><span class="dash">--</span>技能</li>
+                                    <li><span class="dash">--</span>技能</li>
+                                    <li><span class="dash">--</span>技能</li>
+                                    <li><span class="dash">--</span>技能</li>
+                                    <li><span class="dash">--</span>技能</li>
+                                    <li><span class="dash">--</span>技能</li>
+                                </ul>
+                            </div> -->
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="works" id="works">
-            <h1>WORKS</h1>
-            <div class="carousel carousel--works">
-                <div class="carousel__content">
-                    <div class="carousel__item">
-                        <a href="https://jyun-peng.github.io/To-do-List/" class="work" style="background-image: url('./image/work-thumbnails/todo-list.jpg');">
-                            <div class="mask"></div>
-                            <h3 class="title">To Do List</h3>
-                            <div class="tool-group">
-                                <div class="tool">HTML/CSS</div>
-                                <div class="tool">Sass</div>
-                                <div class="tool">JS</div>
-                            </div>
-                        </a>
+            <section class="works" id="works">
+                <h1>WORKS</h1>
+                <div class="carousel carousel--works">
+                    <div class="carousel__content">
+                        <div class="carousel__item">
+                            <a
+                                href="https://jyun-peng.github.io/To-do-List/"
+                                class="work"
+                                style="background-image: url('./image/work-thumbnails/todo-list.jpg')"
+                            >
+                                <div class="mask"></div>
+                                <h3 class="title">To Do List</h3>
+                                <div class="tool-group">
+                                    <div class="tool">HTML/CSS</div>
+                                    <div class="tool">Sass</div>
+                                    <div class="tool">JS</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel__item">
+                            <a
+                                href="https://jyun-peng.github.io/Datepicker/"
+                                class="work"
+                                style="background-image: url('./image/work-thumbnails/datepicker.jpg')"
+                            >
+                                <div class="mask"></div>
+                                <h3 class="title">Datepicker</h3>
+                                <div class="tool-group">
+                                    <div class="tool">HTML/CSS</div>
+                                    <div class="tool">Sass</div>
+                                    <div class="tool">JS</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel__item">
+                            <a
+                                href="https://jyun-peng.github.io/Datepicker/"
+                                class="work"
+                                style="background-image: url('./image/work-thumbnails/datepicker.jpg')"
+                            >
+                                <div class="mask"></div>
+                                <h3 class="title">Datepicker</h3>
+                                <div class="tool-group">
+                                    <div class="tool">HTML/CSS</div>
+                                    <div class="tool">Sass</div>
+                                    <div class="tool">JS</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel__item">
+                            <a
+                                href="https://jyun-peng.github.io/Datepicker/"
+                                class="work"
+                                style="background-image: url('./image/work-thumbnails/datepicker.jpg')"
+                            >
+                                <div class="mask"></div>
+                                <h3 class="title">Datepicker</h3>
+                                <div class="tool-group">
+                                    <div class="tool">HTML/CSS</div>
+                                    <div class="tool">Sass</div>
+                                    <div class="tool">JS</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel__item">
+                            <a
+                                href="https://jyun-peng.github.io/Datepicker/"
+                                class="work"
+                                style="background-image: url('./image/work-thumbnails/datepicker.jpg')"
+                            >
+                                <div class="mask"></div>
+                                <h3 class="title">Datepicker</h3>
+                                <div class="tool-group">
+                                    <div class="tool">HTML/CSS</div>
+                                    <div class="tool">JS</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="carousel__item">
-                        <a href="https://jyun-peng.github.io/Datepicker/" class="work" style="background-image: url('./image/work-thumbnails/datepicker.jpg');">
-                            <div class="mask"></div>
-                            <h3 class="title">Datepicker</h3>
-                            <div class="tool-group">
-                                <div class="tool">HTML/CSS</div>
-                                <div class="tool">Sass</div>
-                                <div class="tool">JS</div>
-                            </div>
-                        </a>
+                    <div class="carousel__controls">
+                        <div class="carousel__btn prev" data-direction="prev"><i class="fas fa-chevron-left"></i></div>
+                        <div class="carousel__btn next" data-direction="next"><i class="fas fa-chevron-right"></i></div>
                     </div>
-                    <div class="carousel__item">
-                        <a href="https://jyun-peng.github.io/Datepicker/" class="work" style="background-image: url('./image/work-thumbnails/datepicker.jpg');">
-                            <div class="mask"></div>
-                            <h3 class="title">Datepicker</h3>
-                            <div class="tool-group">
-                                <div class="tool">HTML/CSS</div>
-                                <div class="tool">Sass</div>
-                                <div class="tool">JS</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="carousel__item">
-                        <a href="https://jyun-peng.github.io/Datepicker/" class="work" style="background-image: url('./image/work-thumbnails/datepicker.jpg');">
-                            <div class="mask"></div>
-                            <h3 class="title">Datepicker</h3>
-                            <div class="tool-group">
-                                <div class="tool">HTML/CSS</div>
-                                <div class="tool">Sass</div>
-                                <div class="tool">JS</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="carousel__item">
-                        <a href="https://jyun-peng.github.io/Datepicker/" class="work" style="background-image: url('./image/work-thumbnails/datepicker.jpg');">
-                            <div class="mask"></div>
-                            <h3 class="title">Datepicker</h3>
-                            <div class="tool-group">
-                                <div class="tool">HTML/CSS</div>
-                                <div class="tool">JS</div>
-                            </div>
-                        </a>
-                    </div>
+                    <div class="carousel__dots"></div>
                 </div>
-                <div class="carousel__controls">
-                    <div class="carousel__btn prev" data-direction='prev'><i class="fas fa-chevron-left"></i></div>
-                    <div class="carousel__btn next" data-direction='next'><i class="fas fa-chevron-right"></i></div>
-                </div>
-                <div class="carousel__dots"></div>
-            </div>
-            <!-- <div class="works-container">
+                <!-- <div class="works-container">
                 <a href="https://jyun-peng.github.io/To-do-List/" class="work" style="background-image: url('./image/work-thumbnails/todo-list.jpg');">
                     <div class="mask"></div>
                     <h3>To Do List</h3>
@@ -217,25 +275,24 @@
                 </a>
 
             </div> -->
-        </section>
+            </section>
 
-        <section class="contact" id="contact">
-            <div class="border--top"></div>
-            <h1>CONTACT</h1>
-            <div class="information">
-                <div class="phone"><i class="fas fa-mobile-alt"></i><span>0931-368-998</span></div>
-                <div class="email"><i class="fas fa-envelope"></i><span>kekvkikn@gmail.com</span></div>
-            </div>
-            <div class="icon-group">
-                <a href="#!" class="icon"><i class="fab fa-github"></i></a>
-                <a href="#!" class="icon"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </section>
-        <footer>Copyright © Jyun-Peng Huang</footer>
-    </div>
+            <section class="contact" id="contact">
+                <div class="border--top"></div>
+                <h1>CONTACT</h1>
+                <div class="information">
+                    <div class="phone"><i class="fas fa-mobile-alt"></i><span>0931-368-998</span></div>
+                    <div class="email"><i class="fas fa-envelope"></i><span>kekvkikn@gmail.com</span></div>
+                </div>
+                <div class="icon-group">
+                    <a href="#!" class="icon"><i class="fab fa-github"></i></a>
+                    <a href="#!" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </section>
+            <footer>Copyright © Jyun-Peng Huang</footer>
+        </div>
 
-
-    <script src="./js/custom.js"></script>
-    <script src="./js/carousel.js"></script>
-</body> 
+        <script src="./js/custom.js"></script>
+        <script src="./js/carousel.js"></script>
+    </body>
 </html>
