@@ -83,12 +83,23 @@ let main = document.querySelector('.js-top');
 let portrait = main.querySelector('.js-portrait');
 let intro = main.querySelector('.js-intro');
 
-function portraitFadeout() {
+// function portraitFadeout() {
+//     let startPos = intro.offsetTop;
+//     let opacity = window.scrollY > startPos ? 1 - (window.scrollY - startPos) / 400 : 1;
+//     portrait.style.opacity = `${opacity}`;
+//     portrait.style.top = `calc(3.5rem - ${window.scrollY / 5}px)`;
+// }
+
+function portraitDarken() {
     let startPos = intro.offsetTop;
-    let opacity = window.scrollY > startPos ? 1 - (window.scrollY - startPos) / 400 : 1;
-    portrait.style.opacity = `${opacity}`;
-    portrait.style.top = `calc(3.5rem - ${window.scrollY / 5}px)`;
+    if (window.scrollY > startPos) {
+        portrait.classList.add('darken');
+    } else {
+        portrait.classList.remove('darken');
+    }
+    // portrait.style.top = `calc(3.5rem - ${window.scrollY / 5}px)`;
 }
+
 function checkOnTop() {
     if (window.scrollY === 0) {
         main.classList.add('active');
@@ -98,11 +109,11 @@ function portraitAppear() {
     portrait.querySelector('.portrait').classList.add('active');
 }
 
-window.addEventListener('scroll', throttling(portraitFadeout, 10));
+window.addEventListener('scroll', throttling(portraitDarken, 10));
 window.addEventListener('scroll', throttling(checkOnTop, 10));
 
 checkOnTop();
-portraitFadeout();
+portraitDarken();
 
 // refresh go to top
 // if (history.scrollRestoration) {
